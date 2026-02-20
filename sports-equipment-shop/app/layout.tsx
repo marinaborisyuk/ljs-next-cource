@@ -1,0 +1,24 @@
+import { Header } from "@/components/header";
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Sport Equipment Shop",
+  description: "Sport Equipment Shop",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <Header />
+      <body
+      >
+        {children}
+      </body>
+    </html>
+  );
+}
